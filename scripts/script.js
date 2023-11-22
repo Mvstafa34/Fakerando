@@ -121,6 +121,7 @@ function addOne(i) {
     renderNumberButton();
     renderCartTotal();
     renderCartBox();
+    renderMobileCart();
 }
 
 
@@ -142,6 +143,7 @@ function removeOne(i) {
     renderNumberButton();
     renderCartTotal();
     renderCartBox();
+    renderMobileCart();
 
     if (menuNameInCart.length == 0) {
         renderCart();
