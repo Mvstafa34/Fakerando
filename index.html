@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icons/logo-mini.svg">
+    <title>Fakerando</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/html.js"></script>
+    <script src="./scripts/script.js"></script>
+
+</head>
+
+<body onload="render()">
+    <nav class="upper-nav">
+        <div class="upper-left-corner">
+            <img class="back-button" src="./img/icons/zurück.png" alt="Zurück">
+            <img class="logo" src="./img/icons/logo.svg" alt="Fakerando">
+            <img class="logo-mini" src="./img/icons/logo-mini.svg" alt="Fakerando">
+        </div>
+        <div class="ordermenu-title">
+            <h6>Speisekarte</h6>
+        </div>
+        <div class="upper-right-corner">
+            <img class="nav-buttons lang" src="./img/icons/sprache.png" alt="Sprache">
+            <img class="nav-buttons" src="./img/icons/menü.svg" alt="Menü">
+        </div>
+    </nav>
+    <nav id="mobile-cart" onclick="toggleMobileCart()" class="mobile-cart">
+
+    </nav>
+    <div id="right-menu" class="pos-sticky">
+        <menu class="right-menu">
+            <div class="cart-title">
+                <h2>Warenkorb</h2>
+                <img id="close-button" class="close-button d-none" onclick="toggleMobileCart()"
+                    src="./img/icons/schließen.svg" alt="Schließen">
+            </div>
+            <div id="cart-box" class="cart-box d-none">
+
+            </div>
+            <div class="final-total" id="final-total">
+
+            </div>
+            <div id="empty-cart" class="empty-cart">
+                <img src="./img/icons/einkaufstüte black.png" alt="Warenkorb">
+                <h2>Fülle deinen Warenkorb</h2>
+                <p>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</p>
+            </div>
+        </menu>
+    </div>
+    <main>
+        <div class="restaurant">
+            <div class="food-menu">
+                <div class="banner">
+                </div>
+                <div class="food-section">
+                    <section>
+                        <div class="restaurant-logo">
+                            <div>
+                                <img src="./img/restaurant-logo.avif" alt="Restaurant Logo">
+                            </div>
+                        </div>
+                        <div class="restaurant-info">
+                            <div class="restaurant-name">
+                                <h1>Croccante Restaurant</h1>
+                                <div class="save-restaurant">
+                                    <img class="restaurant-name-buttons" src="./img/icons/info.svg" alt="Information">
+                                    <img class="restaurant-name-buttons" src="./img/icons/speichern.png"
+                                        alt="Speichern">
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <div class="rating-stars">
+                                    <img src="./img/icons/stern.png" alt="1. Stern">
+                                    <img src="./img/icons/stern.png" alt="2. Stern">
+                                    <img src="./img/icons/stern.png" alt="3. Stern">
+                                    <img src="./img/icons/stern.png" alt="4. Stern">
+                                    <img src="./img/icons/halb-stern.png" alt="5. Stern">
+                                </div>
+                                <p>2,7k Bewertungen</p>
+                            </div>
+                            <div class="costs">
+                                <div class="icons min-order">
+                                    <img src="./img/icons/einkaufstüte grey.png" alt="Mindestbestellwert">
+                                    <p>Min. 10,00 €</p>
+                                </div>
+                                <div class="icons del-cost">
+                                    •
+                                    <img src="./img/icons/fahrrad.png" alt="Lieferkosten">
+                                    <p>2,00 €</p>
+                                </div>
+                            </div>
+                            <div class="restaurant-note">
+                                <p>10% Rabatt auf alles außer Getränke</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="food-navbar">
+                            <div class="lens-icon">
+                                <img src="./img/icons/lupe.png" alt="Suche">
+                            </div>
+                            <div class="food-sections">
+                                <p class="popular">Beliebt ❤️</p>
+                                <p>Pizza</p>
+                                <p>Salate</p>
+                                <p>Pizzabrot</p>
+                                <p>Pasta</p>
+                                <p>Al Forno</p>
+                                <p>Aufläufe</p>
+                                <p>Puten-Schnitzel</p>
+                                <p>Burger</p>
+                                <p>Baguettes</p>
+                            </div>
+                            <div class="next-icon">
+                                <img src="./img/icons/weiter.png" alt="Mehr">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="food-menu-section">
+                <h2>Beliebt ❤️</h2>
+                <div id="popularSection" class="food-category">
+
+                </div>
+                <div id="pizzaSection" class="food-category">
+                    <div class="dish-box pizza-banner">
+                    </div>
+                    <div class="pizza-title">
+                        <h2>Pizza</h2>
+                        <p>Alle Pizzen werden mit Tomatensauce, Käse und Oregano zubereitet.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
